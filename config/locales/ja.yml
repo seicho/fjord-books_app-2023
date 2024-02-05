@@ -28,6 +28,7 @@ ja:
       destroy: この本を削除
     edit:
       title: 本の編集
+      show: この本を表示
     new:
       title: 新規登録
     #for controller
