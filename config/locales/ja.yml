@@ -1,12 +1,42 @@
 ---
 ja:
   activerecord:
+    models:
+      book: 本
+
+    attributes:
+      book:
+        author: 著者
+        memo: メモ
+        picture: 画像
+        title: タイトル
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
+  books:
+    #for view
+    back: 本の一覧に戻る
+    index: 
+      title: 本の一覧
+      show: この本を表示
+      new: 本の新規登録
+    show:
+      edit: この本を編集
+      destroy: この本を削除
+    edit:
+      title: 本の編集
+    new:
+      title: 新規登録
+    #for controller
+    create:
+      success: 正常に本が登録されました。
+    destroy:
+      success: 正常に本が削除されました。
+    update:
+      success: 正常に本が更新されました。
   date:
     abbr_day_names:
     - 日

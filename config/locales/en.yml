@@ -1,12 +1,42 @@
 ---
 en:
   activerecord:
+    models:
+      book: Book  #g
+
+    attributes:
+      book:
+        author: Author  #g
+        memo: Memo  #g
+        picture: Picture  #g
+        title: Title  #g
     errors:
       messages:
         record_invalid: 'Validation failed: %{errors}'
         restrict_dependent_destroy:
           has_one: Cannot delete record because a dependent %{record} exists
           has_many: Cannot delete record because dependent %{record} exist
+  books:
+    #for view
+    back: Back 
+    index: 
+      title: Books 
+      show: Show this book
+      new: New book
+    show:
+      edit: Edit this book
+      destroy: Destroy this book
+    edit:
+      title: Edit this book
+    new:
+      title: New book
+    #for controller
+    create:
+      success: Book was successfully created.
+    destroy:
+      success: Book was successfully destroyed.
+    update:
+      success: Book was successfully updated.
   date:
     abbr_day_names:
     - Sun
