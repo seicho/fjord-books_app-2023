@@ -36,7 +36,7 @@ Book.create!(
 100.times do |n|
   Book.create!(
     title: "Book #{n}",
-    memo: "#{n}",
+    memo: n.to_s,
     author: "Mr. #{n}",
     picture: nil
   )
