@@ -1,7 +1,9 @@
-<h1>Users#index</h1>
+<h1><%= User.model_name.human(count: 2) %></h1>
 
+<ul>
 <% @users.each do |user| %>
-  <%= link_to user.email, user %>
+  <li><%= link_to user.email, user %></li>
 <% end%>
+</ul>
 
 <%= paginate @users %>
