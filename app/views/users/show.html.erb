@@ -1,0 +1,25 @@
+<h1><%= t('.title') %></h1>
+
+<table>
+  <tr>
+    <td><%= User.human_attribute_name('email') %></td>
+    <td><%= @user.email %></td>
+  </tr>
+  <tr>
+    <td><%= User.human_attribute_name('postal_code') %></td>
+    <td><%= @user.postal_code %></td>
+  </tr>
+  <tr>
+    <td><%= User.human_attribute_name('address') %></td>
+    <td><%= @user.address %></td>
+  </tr>
+  <tr>
+    <td><%= User.human_attribute_name('introduction') %></td>
+    <td><%= @user.introduction %></td>
+  </tr>
+</table>
+
+<div>
+  <%= link_to t('views.common.edit', name: User.model_name.human), edit_user_registration_path if  @user == current_user %><br />
+  <%= link_to t('views.common.back', name: User.model_name.human), users_path %>
+</div>
