@@ -20,3 +20,8 @@ ja:
   users:
     show:
       title: プロフィール
+
+  devise:
+    registrations:
+      edit:
+        unhappy: ''
