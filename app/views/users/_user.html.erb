@@ -1,6 +1,11 @@
 <div id="<%= dom_id user %>">
 
   <p>
+    <%= User.human_attribute_name(:icon) %></strong>
+    <%= render partial: 'icon', locals: {user: user} %>
+  </p>
+
+  <p>
     <strong><%= User.human_attribute_name(:email) %>:</strong>
     <%= user.email %>
   </p>
