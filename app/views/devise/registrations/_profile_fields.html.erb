@@ -17,3 +17,9 @@
   <%= f.label :self_introduction %><br />
   <%= f.text_area :self_introduction %>
 </div>
+
+<div class="field">
+  <%= f.label :icon %><br />
+  <%= render 'users/icon', user: user %><br />
+  <%= f.file_field :icon, accept: 'image/png, image/gif, image/jpeg' %>
+</div>

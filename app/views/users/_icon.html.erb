@@ -1,0 +1,3 @@
+<% if user.icon.attached? && user.icon.representable? %>
+  <%= image_tag user.icon.representation(resize_to_limit: [100, 100]) %>
+<% end %>
